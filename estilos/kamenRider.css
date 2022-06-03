@@ -1,0 +1,529 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #d7d9d1;
+}
+.colores {
+    color: #be2417;
+    color: #3e1b18;
+    color: #2596be;
+    color: #04bbdb;
+    color: #d7d9d1;
+    color: #5d7575;
+    color: #69e1e5;
+    color: #35eff2;
+}
+
+/*--- --- NAVIGATION --- ---*/
+.navigation {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #69e1e5;
+}
+/* LOGO */
+.navigation__logo-cont-img {
+    width: 30%;
+    max-width: 175px;
+    margin: 0 0 0 3%;
+}
+/* ICONOS */
+.navigation__icons {
+    width: 25%;
+    margin: 0 3% 0 0;
+}
+.navigation__icons i {
+    font-size: 25px;
+    margin: 0 4%;
+}
+/*IMAGEN*/
+.navigation__logo-cont-img img {
+    width: 100%;
+    display: block;
+}
+/*--- --- NAVIGATION LINKS --- ---*/
+.navigation-links {
+    width: 100%;
+}
+.navigation-links__ul {
+    padding: 1% 0 1% 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #04bbdb;
+}
+.navigation-links__ul li {
+    margin: 0 2% 0 2%;
+}
+.navigation-links__ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*--- --- PRODUCTOS GRID --- ---*/
+.products-grid {
+    width: 90%;
+    margin: 5% auto 0 auto;
+    padding-bottom: 8%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    place-items: center center;
+    row-gap: 1%;
+}
+/* CELDAS */
+.products-grid__cont-img {
+    width: 100%;
+    height: 200px;
+}
+/*IMAGENES*/
+.products-grid__cont-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/*--- --- PRODUCTO PRINCIPAL --- ---*/
+.product-release--avataro {
+    width: 100%;
+    margin: 5% 0 0 0;
+    padding: 4% 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #2596be;
+}
+/* RELEASE__IMAGEN */
+.product-release__cont-img--avataro {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+
+    background-color: #fff;
+}
+/* RELEASE__TEXT */
+.product-release__cont-details {
+    padding: 0 2%;
+}
+.product-release__text h4 {
+    font-size: 24px;
+    margin: 2% 0; 
+}
+.product-release__text p {
+    margin: 2% 0;
+}
+/*TEXT-PICE*/
+.product-release__cont-shop {
+    width: 100%;
+    margin: 4% 0;
+
+    display: flex;
+    align-items: center;
+}
+.product-release-cont-shop__price {
+    font-weight: bold;
+}
+.product-release-cont-shop__num {
+    margin: 0 3%;
+    font-size: 30px;
+
+    color: #69e1e5;
+}
+/*TEXT-BUTTON*/
+.product-release__button {
+    width: 100%;
+}
+.product-release__button button {
+    display: block;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+
+    font-size: 20px;
+    font-weight: 300;
+
+    border: none;
+
+    color: #d7d9d1;
+    background-color: #04bbdb;
+}
+.product-release__button button:hover {
+    background-color: #35eff2;
+}
+/*IMAGEN*/
+.product-release__cont-img--avataro img {
+    width: 100%;
+    display: block;
+}  
+
+/*--- --- BANNER LINKS --- ---*/
+/* BANNER LINK UNO */ 
+.banner-link--revice {
+    height: 330px;
+    margin: 0 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-image: url(../image/revice/bannerArriba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-link__cont-img--revice {
+    width: 95%;
+    max-width: 800px;
+}
+/*IMAGENES*/
+.banner-link__cont-img--revice img{
+    width: 100%;
+}
+/* BANNER LINK DOS */
+.banner-link--avataro {
+    height: 330px;
+    margin: 0 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: red;
+    background-image: url(../image/donBrothers/bannerArriba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-link__cont-img {
+    width: 50%;
+    max-width: 400px;
+}
+/*IMAGENES*/
+.banner-link__cont-img img{
+    width: 100%;
+}
+
+/*--- --- SOME PRODUCTS --- ---*/
+.some-products {
+    margin: 5% 0 0 0;
+    padding: 10px 0;
+
+    background-color: #2596be;
+}
+/* SOME-PRODUCTS__TEXTO*/
+.some-products__text {
+    padding: 0 2%;
+}
+.some-products__text h3 {
+    margin: 1% 0;
+}
+
+/* RUNWAY */
+.some-products__runway {
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* CARDS */
+.some-products-runway__card {
+    width: 45%;
+    max-width: 250px;
+    margin: 3% 0 0 0;
+    padding: 9px;
+
+    background-color: #04bbdb;
+}
+/*CARD__IMAGEN */
+.runway-card__cont-img {
+    width: 100%;
+}
+/*CARD__TEXTO*/
+.runway-card__cont-text h4 {
+    margin: 5% 0;
+}
+.runway-card__cont-text p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5% 0 15% 0;
+}
+/* EFECTO HOVER */
+.some-products-runway__card:hover {
+    transform: translateY(-1.5%);
+    box-shadow: 3px 3px 3px #1113;
+}
+/*IMAGEN*/
+.runway-card__cont-img img {
+    width: 100%;
+    display: block;
+}
+
+/*--- --- PRODUCTO DESTACADO --- ---*/
+.product-release {
+    width: 100%;
+    margin: 5% 0 0 0;
+    padding: 4% 3%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #2596be;
+}
+/* RELEASE__IMAGEN */
+.product-release__cont-img {
+    width: 100%;
+    margin: auto;
+}
+/* RELEASE__TEXT */
+.product-release__cont-details {
+    padding: 0 2%;
+}
+.product-release__text h4 {
+    font-size: 24px;
+    margin: 2% 0; 
+}
+.product-release__text p {
+    margin: 2% 0;
+}
+/*TEXT-PICE*/
+.product-release__cont-shop {
+    width: 100%;
+    margin: 4% 0;
+
+    display: flex;
+    align-items: center;
+}
+.product-release-cont-shop__price {
+    font-weight: bold;
+}
+.product-release-cont-shop__num {
+    margin: 0 3%;
+    font-size: 30px;
+
+    color: #69e1e5;
+}
+/*TEXT-BUTTON*/
+.product-release__button {
+    width: 100%;
+}
+.product-release__button button {
+    display: block;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+
+    font-size: 20px;
+    font-weight: 300;
+
+    border: none;
+
+    color: #d7d9d1;
+    background-color: #04bbdb;
+}
+.product-release__button button:hover {
+    background-color: #35eff2;
+}
+/*IMAGEN*/
+.product-release__cont-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}  
+
+/*--- --- MAS PRODUCTOS --- ---*/
+.more-products {
+    margin: 5% 0 0 0;
+    padding: 4% 0 4% 0;
+
+    background-color: #2596be;
+}
+
+.some-products-runway__card--more {
+    width: 45%;
+    max-width: 215px;
+    margin: 3% 0 0 0;
+    padding: 9px;
+
+    background-color: #04bbdb;
+}
+
+/* EFECTO HOVER */
+.some-products-runway__card--more:hover {
+    transform: translateY(-1.5%);
+    box-shadow: 3px 3px 3px #1113;
+}
+
+/* MORE__TEXT */
+.more-products__text {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 0 0 4%;
+}
+/* MORE__RUNWAY */
+.more-products__runway {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*--- --- FOOTER --- ---*/
+.footer{
+    width: 100%;
+    height: 110px;
+    margin: 0 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #2596be;
+}
+/* FOOTER__IMAGEN */
+.footer__cont-img {
+    width: 30%;
+    max-width: 150px;
+    margin: 0 0 0 2%;
+}
+/* FOOTER__REDES */
+.footer__cont-redes {
+    font-size: 30px;
+}
+/* FOOTER__PAGOS */
+.footer__cont-pagos {
+    font-size: 30px;
+    margin: 0 4% 0 0;
+}
+/*IMAGEN*/
+.footer__cont-img img {
+    width: 100%;
+    display: block;
+}
+
+/*--- --- RESPONSIVE --- ---*/
+@media screen and (min-width:1060px) {
+    /*--- --- PRODUCTOS GRID --- ---*/
+    .products-grid {
+        width: 85%;
+        margin: 5% auto 0 auto;
+        padding-bottom: 0%;
+
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        place-items: center center;
+        row-gap: 0%;
+    }
+    /* CELDAS */
+    .products-grid__cont-img {
+        width: 97%;
+        height: 97%;
+    }
+    .products-grid__cont-img:first-child {
+        width: 100%;
+        height: 100%;
+
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    .products-grid__cont-img:nth-child(2) {
+        place-self: start start;
+    }
+    .products-grid__cont-img:nth-child(3) {
+        place-self: start end;
+    }
+    .products-grid__cont-img:nth-child(4){
+        place-self: end start;
+    }
+    .products-grid__cont-img:nth-child(5) {
+        place-self: end end;
+    }
+    /*IMAGENES*/
+    .products-grid__cont-img img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+        object-position: center center;
+    }
+}
+@media screen and (min-width:910px) {
+    /*--- --- PRODUCTO PRINCIPAL --- ---*/
+    .product-release--avataro {
+        width: 95%;
+        margin: 5% auto 0 auto;
+        padding: 2% 10%;
+    
+        display: flex;
+        flex-direction: row;
+    
+        background-color: #2596be;
+    }
+    /*--- --- PRODUCTO DESTACADO --- ---*/
+    .product-release {
+        width: 95%;
+        margin: 5% auto 0 auto;
+        padding: 2% 2%;
+    
+        display: flex;
+        flex-direction: row;
+    
+        background-color: #2596be;
+    }
+    /* RELEASE__IMAGEN */
+    .product-release__cont-img {
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+    }
+    /* RELEASE__TEXT */
+    .product-release__cont-details {
+        padding: 0 2%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .product-release__text h4 {
+        font-size: 24px;
+        margin: 2% 0; 
+    }
+    .product-release__text p {
+        margin: 2% 0;
+    }
+    /*TEXT-PRICE*/
+    .product-release__cont-shop {
+        width: 100%;
+        margin: auto 0 auto 0;
+
+        display: flex;
+        align-items: center;
+    }
+    /*TEXT-BUTTON*/
+    .product-release__button {
+        width: 100%;
+        margin: auto 0 20% 0;
+    }
+    /*IMAGEN*/
+    .product-release__cont-img img {
+        width: 100%;
+        display: block;
+    }
+}
